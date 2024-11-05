@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-2*i0owf0*1v9bmd=d(8z6s^$2n)9rhuf^=troz659l^&--g$_u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://calificaciones-gimnasia.onrender.com']
+ALLOWED_HOSTS = ['https://calificaciones-gimnasia.onrender.com','localhost','127.0.0.1']
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -126,3 +126,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CSRF_TRUSTED_ORIGINS = ['https://calificaciones-gimnasia.onrender.com']
+
